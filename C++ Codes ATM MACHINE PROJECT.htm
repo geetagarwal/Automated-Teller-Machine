@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://cplus14.blogspot.in/2013/04/atm-machine-project.html -->
+<html class="v2" dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="./C++ Codes  ATM MACHINE PROJECT_files/1535467126-widget_css_2_bundle.css">
+<link type="text/css" rel="stylesheet" href="./C++ Codes  ATM MACHINE PROJECT_files/authorization.css">
+<style type="text/css">
+@import url ("http://www.simplebutbrilliant.com/resources/stylesheet1.css");
+.urdu{font-family:"NafeesRegular";}
+</style>
+<!-- Meta Tags ~ cplus14.blogspot.com -->
+<meta content="C++ codes and projects are presented. The codes are simple to learn basic programming concepts (for beginners). And also some interesting projects are also presented." name="description">
+<meta content="void, include, codes, accountno , withdraw, deposit,  projects, c++ codes, c++ projects,learn how to code, " name="keywords">
+<meta content="H. Junaid Hassan" name="Author">
+<meta content="junaidte14@gmail.com" name="Email">
+<meta content="all" name="robots">
+<meta content="index, follow" name="robots">
+<meta content="English" name="language">
+<meta content="Pakistan" name="country">
+<meta content="blogger" name="generator">
+<!-- /Meta Tags ~ cplus14.blogspot.com -->
+<meta content="width=1100" name="viewport">
+
+<script src="./C++ Codes  ATM MACHINE PROJECT_files/cb=gapi.loaded_4" async=""></script><script src="./C++ Codes  ATM MACHINE PROJECT_files/cb=gapi.loaded_3" async=""></script><script src="./C++ Codes  ATM MACHINE PROJECT_files/cb=gapi.loaded_2" async=""></script><script async="" type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/ca-pub-7549065889146532.js"></script><script src="./C++ Codes  ATM MACHINE PROJECT_files/cb=gapi.loaded_1" async=""></script><script src="./C++ Codes  ATM MACHINE PROJECT_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript">(function() { var b=window,f="chrome",g="tick",k="jstiming";(function(){function d(a){this.t={};this.tick=function(a,d,c){var e=void 0!=c?c:(new Date).getTime();this.t[a]=[e,d];if(void 0==c)try{b.console.timeStamp("CSI/"+a)}catch(h){}};this[g]("start",null,a)}var a;b.performance&&(a=b.performance.timing);var n=a?new d(a.responseStart):new d;b.jstiming={Timer:d,load:n};if(a){var c=a.navigationStart,h=a.responseStart;0<c&&h>=c&&(b[k].srt=h-c)}if(a){var e=b[k].load;0<c&&h>=c&&(e[g]("_wtsrt",void 0,c),e[g]("wtsrt_","_wtsrt",h),e[g]("tbsd_","wtsrt_"))}try{a=null,
+b[f]&&b[f].csi&&(a=Math.floor(b[f].csi().pageT),e&&0<c&&(e[g]("_tbnd",void 0,b[f].csi().startE),e[g]("tbnd_","_tbnd",c))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,e&&0<c&&(e[g]("_tbnd",void 0,b.external.startE),e[g]("tbnd_","_tbnd",c))),a&&(b[k].pt=a)}catch(p){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[k].load[g]("aft")};var l=!1;function m(){l||(l=!0,b[k].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",m,!1):b.attachEvent("onscroll",m);
+ })();</script>
+<meta content="blogger" name="generator">
+<link href="http://cplus14.blogspot.in/favicon.ico" rel="icon" type="image/x-icon">
+<link href="http://cplus14.blogspot.com/2013/04/atm-machine-project.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="C++ Codes - Atom" href="http://cplus14.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="C++ Codes - RSS" href="http://cplus14.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="C++ Codes - Atom" href="http://www.blogger.com/feeds/5142944227078923209/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="C++ Codes - Atom" href="http://cplus14.blogspot.com/feeds/3517516107146231294/comments/default">
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1735305980-ieretrofit.js"></script>
+<![endif]-->
+<meta content="#include&lt;fstream.h&gt;
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;string.h&gt;
+#include&lt;iostream.h&gt;" name="description">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>C++ Codes: ATM MACHINE PROJECT</title>
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#3399bb" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#777777" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#999999"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color"
+default="#cccccc"/>
+<Variable name="date.header.background.color" description="Background Color" type="color"
+default="transparent"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#cccccc"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+<Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="#404040"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#292929" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(//www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(//www.blogblog.com/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px"/>
+<Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="10px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="30px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px"/>
+<Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="1px"/>
+<Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" />
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" />
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(//www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px"/>
+<Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit"/>
+<Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit"/>
+<Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit"/>
+<Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px"/>
+<Variable name="main.padding" description="Main Padding" type="length" default="15px"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px"/>
+<Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px"/>
+<Variable name="paging.background"
+color="#333333"
+description="Background of blog paging area" type="background"
+default="transparent none no-repeat scroll top center"/>
+<Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #cccccc;
+background: #292929 none repeat scroll top left;
+padding: 0 40px 40px 40px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+a:link {
+text-decoration:none;
+color: #dd7700;
+}
+a:visited {
+text-decoration:none;
+color: #cc6600;
+}
+a:hover {
+text-decoration:underline;
+color: #cc6600;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+background: #292929 none repeat scroll top left;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
+}
+.content-inner {
+padding: 10px 10px;
+}
+.content-inner {
+background-color: #333333;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: transparent none repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
+}
+.Header h1 a {
+color: #ffffff;
+}
+.Header .description {
+font-size: 140%;
+color: #aaaaaa;
+}
+.header-inner .Header .titlewrapper {
+padding: 22px 30px;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 30px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 1px solid #404040;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -1px;
+border-top: 1px solid #404040;
+border-left: 0 solid #404040;
+border-right: 0 solid #404040;
+}
+.tabs-inner .widget ul {
+background: #222222 none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #404040;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #333333;
+border-right: 0 solid #404040;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #ffffff;
+background-color: #000000;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #404040;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #404040;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 1px solid #404040;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+.date-header span {
+background-color: transparent;
+color: #cccccc;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
+}
+.main-inner {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.main-inner .column-center-inner {
+padding: 0 15px;
+}
+.main-inner .column-center-inner .section {
+margin: 0 15px;
+}
+.post {
+margin: 0 0 25px 0;
+}
+h3.post-title, .comments h4 {
+font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 110%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 0;
+background: #111111;
+border: 1px solid #111111;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 1px;
+}
+.post-body .tr-caption-container {
+color: #cccccc;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
+}
+.post-footer {
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #888888;
+background-color: #303030;
+border-bottom: 1px solid #444444;
+line-height: 1.6;
+font-size: 90%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #404040;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #111111;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
+}
+.comments .comment-thread.inline-thread {
+background-color: #303030;
+}
+.comments .continue {
+border-top: 2px solid #999999;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #404040;
+}
+.blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #333333;
+padding: 5px;
+}
+.footer-outer {
+border-top: 0 dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+}
+body.mobile .AdSense {
+margin: 0 -40px;
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #333333;
+}
+.mobile-index-contents {
+color: #cccccc;
+}
+.mobile-link-button {
+background-color: #dd7700;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #000000;
+color: #ffffff;
+border-top: 1px solid #404040;
+border-bottom: 1px solid #404040;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #404040;
+}
+#navbar-iframe{
+display: none;
+}
+--></style>
+<style id="template-skin-1" type="text/css"><!--
+body {
+min-width: 960px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 960px;
+max-width: 960px;
+_width: 960px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 350px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 350px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("350px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 350px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 350px;
+margin-right: -350px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">var a="indexOf",b="&m=1",e="(^|&)m=",f="?",g="?m=1";function h(){var c=window.location.href,d=c.split(f);switch(d.length){case 1:return c+g;case 2:return 0<=d[1].search(e)?null:c+b;default:return null}}var k=navigator.userAgent;if(-1!=k[a]("Mobile")&&-1!=k[a]("WebKit")&&-1==k[a]("iPad")||-1!=k[a]("Opera Mini")||-1!=k[a]("IEMobile")){var l=h();l&&window.location.replace(l)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script><script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/google_top_exp.js"></script><style>.gc-bubbleDefault{background-color:transparent !important;text-align:left;padding:0 !important;margin:0 !important;border:0 !important;table-layout:auto !important}.gc-reset{background-color:transparent !important;border:0 !important;padding:0 !important;margin:0 !important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc !important}.pls-topTail,.pls-vertShimLeft,.pls-contentLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif) !important}.pls-topTail{background-repeat:repeat-x !important;background-position:bottom !important}.pls-vertShim{background-color:#fff !important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5 !important}.pls-vertShimLeft{background-repeat:repeat-y !important;background-position:right !important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2 !important}.pls-contentWrap{background-color:#fff !important;position:relative !important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:right;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png) !important;background-repeat:repeat-y !important;vertical-align:top}.pls-vert,.pls-tailleft,.pls-dropTR .pls-dropBR,.pls-dropBL,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png) !important;background-repeat:repeat-x !important;width:100%;vertical-align:top}.pls-topLeft{background:inherit !important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit !important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit !important;text-align:right}.pls-bottomRight{background:inherit !important;text-align:left;vertical-align:top}.pls-tailtop,.pls-tailright,.pls-tailbottom,.pls-tailleft{display:none;position:relative}.pls-tailbottom,.pls-tailtop,.pls-tailright,.pls-tailleft,.pls-dropTR,.pls-dropBR,.pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png) !important;background-repeat:no-repeat}.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailtop,.tbl-grey .pls-tailright,.tbl-grey .pls-tailleft,.tbl-grey .pls-dropTR,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png) !important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-topLeft img,.pls-topRight img,.pls-tailbottom{vertical-align:bottom}.pls-bottomLeft img,.bubbleDropTR,.pls-dropBottomL img,.pls-dropBottom img,.pls-dropBottomR img,.pls-bottomLeft{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacertop,.pls-spacerright,.pls-spacerbottom,.pls-spacerleft{position:static !important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style></head>
+<body class=" variant-dark">
+<div class="navbar section" id="navbar"><div class="widget Navbar" id="Navbar1"><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" width="100%" id="navbar-iframe" name="navbar-iframe" src="./C++ Codes  ATM MACHINE PROJECT_files/navbar.htm"></iframe></div>
+<script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript">
+        gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+          if (gapi.iframes && gapi.iframes.getContext) {
+            gapi.iframes.getContext().openChild({
+                url: 'https://www.blogger.com/navbar.g?targetBlogID\0755142944227078923209\46blogName\75C%2B%2B+Codes\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://cplus14.blogspot.com/search\46blogLocale\75en_GB\46v\0752\46homepageUrl\75http://cplus14.blogspot.com/\46targetPostID\0753517516107146231294\46blogPostOrPageUrl\75http://cplus14.blogspot.com/2013/04/atm-machine-project.html\46blogFollowUrl\75https://plus.google.com/108645300328099782768\46vt\0754787528753002584000',
+                where: document.getElementById("navbar-iframe-container"),
+                id: "navbar-iframe"
+            });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="http://cplus14.blogspot.in/">C++ Codes</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>Here c++ codes and projects are presented. The codes are simple to learn basic programming concepts (for beginners). And also some interesting projects are also presented.</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs section" id="crosscol"><div class="widget PageList" id="PageList1">
+<h2>Pages</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://cplus14.blogspot.in/">Home</a></li>
+<li><a href="http://cplus14.blogspot.in/p/beginners.html">Beginners Codes</a></li>
+<li><a href="http://cplus14.blogspot.in/p/advance-level.html">Advance Level Codes</a></li>
+<li><a href="http://cplus14.blogspot.in/p/projects_20.html">Professional Projects</a></li>
+<li><a href="http://comm14.blogspot.com/">General Writings</a></li>
+<li><a href="http://matlabcode.weebly.com/">Mtlab Codes</a></li>
+<li><a href="http://webcods.blogspot.com/">Web Development</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=5142944227078923209&widgetType=PageList&widgetId=PageList1&action=editWidget&sectionId=crosscol" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;PageList1&quot;));" target="configPageList1" title="Edit">
+<img alt="" height="18" src="./C++ Codes  ATM MACHINE PROJECT_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+<div class="tabs section" id="crosscol-overflow"></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main"><div class="widget Blog" id="Blog1">
+<div class="blog-posts hfeed">
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>Tuesday, 23 April 2013</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="5142944227078923209" itemprop="blogId">
+<meta content="3517516107146231294" itemprop="postId">
+<a name="3517516107146231294"></a>
+<h3 class="post-title entry-title" itemprop="name">
+ATM MACHINE PROJECT
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-3517516107146231294" itemprop="articleBody">
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<h1>Prepared by:</h1>
+<p>
+Ahmed Khan (Telecom Engineering Student)
+</p>
+<h1>Description:</h1><br>
+<br>
+This Project perform almost all functions of ATM Machine.<br>
+<br>
+CODE:<br>
+<br>
+<br>
+<code>
+#include&lt;fstream.h&gt;<br>
+#include&lt;stdio.h&gt;<br>
+#include&lt;conio.h&gt;<br>
+#include&lt;string.h&gt;<br>
+#include&lt;iostream.h&gt;<br>
+#include &lt;graphics.h&gt;<br>
+#include &lt;stdlib.h&gt;<br>
+#include &lt;stdio.h&gt;<br>
+#include &lt;conio.h&gt;<br>
+#include &lt;dos.h&gt;<br>
+&nbsp; &nbsp; &nbsp; void punit (void);<br>
+&nbsp; &nbsp; &nbsp; void deposit(void);<br>
+&nbsp; &nbsp; &nbsp; void addrecord();<br>
+&nbsp; &nbsp; &nbsp; void delrecord();<br>
+&nbsp; &nbsp; &nbsp; void modrecord();<br>
+&nbsp; &nbsp; &nbsp; void disprecord();<br>
+&nbsp; &nbsp; &nbsp; void dispall();<br>
+&nbsp; &nbsp; &nbsp; void withdraw();<br>
+&nbsp; &nbsp;float w,z;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;class account<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int accountno,cls;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; char name[30],type;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; float deposit,withdraw;<br>
+&nbsp; public:<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; account()<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; deposit=withdraw=0;<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int giveaccountno()<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return accountno;<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void getdata(int mrno)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; accountno=mrno+1;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"ACCOUNT NUMBER &nbsp; &nbsp; &nbsp; &nbsp;:: &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;accountno&lt;&lt;"<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"ENTER YOUR NAME &nbsp; &nbsp; &nbsp; :: &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gets(name);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"ENTER TYPE OF ACCOUNT SAVING(s)/CURRENT(c) &nbsp;:: &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;type;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"ENTER INITIAL AMOUNT &nbsp;::Rs &nbsp;";cin&gt;&gt;deposit;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+";<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void withdrawal(int m)<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"AMOUNT BEFORE WITHDRAWING::Rs &nbsp;"&lt;&lt;deposit&lt;&lt;"<br>
+";<br>
+&nbsp; &nbsp; &nbsp; deposit=deposit-m;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"AMOUNT AFTER WITHDRAWING::Rs &nbsp;"&lt;&lt;deposit;<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void deposital(int m)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"AMOUNT BEFORE DEPOSIT::Rs &nbsp;"&lt;&lt;deposit&lt;&lt;"<br>
+";<br>
+&nbsp; &nbsp; deposit=deposit+m;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"AMOUNT AFTER DEPOSIT ::Rs &nbsp;"&lt;&lt;deposit;<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void dispdata()<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int scrnt=0;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(scrnt==1)<br>
+&nbsp; &nbsp; {<br>
+&nbsp; &nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"DISPLAY ALL MENU<br>
+&nbsp;";<br>
+&nbsp; &nbsp; scrnt=0;<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+ACCOUNT NUMBER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;::";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;accountno;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+NAME OF DEPOSITER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ::";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;name;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+TYPE OF ACCOUNT SAVING(s)/CURRENT(c) &nbsp;:: &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;type;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+BALANCE &nbsp;::Rs &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;deposit;<br>
+&nbsp; &nbsp; scrnt++;<br>
+&nbsp; &nbsp; &nbsp;}<br>
+&nbsp; };</code><br>
+<a name="more"></a><code><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void main()<br>
+&nbsp; &nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int menuch;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;punit();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;do<br>
+&nbsp; &nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; textcolor(14);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; textbackground(1);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+<br>
+<span class="Apple-tab-span" style="white-space: pre;">     </span>MAIN MENU<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>1.NEW ACCOUNT &nbsp; &nbsp; ";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>2.CLOSE AN ACCOUNT ";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>3.MODIFY AN ACCOUNT &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>4.DISPLAY AN ACCOUNT ";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>5.DISPLAY ALL RECORDS ";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>6.WITHDRAW AMOUNT";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>7.DEPOSIT AMOUNT";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>8.EXIT &nbsp; &nbsp; ";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<span class="Apple-tab-span" style="white-space: pre;">  </span>ENTER YOUR CHOICE &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; cin&gt;&gt;menuch;<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;switch(menuch)<br>
+&nbsp; &nbsp; {<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 1:addrecord();break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 2:delrecord();break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 3:modrecord();break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 4:disprecord();break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 5:dispall();break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 6:withdraw();break;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case 7:deposit();break;<br>
+&nbsp; &nbsp; &nbsp;}<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;while(menuch!=8);<br>
+&nbsp; &nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void addrecord()<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;account obj_1,obj_2;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fstream fout;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.open("banking.txt",ios::in|ios::binary);<br>
+&nbsp; &nbsp; &nbsp;if(!fout)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"FILE OPEN ERROR &nbsp;";getch();return;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int recsize=sizeof(account);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.seekg(0,ios::end);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.seekg(-1*recsize,ios::cur);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.read((char*)&amp;obj_1,recsize);<br>
+&nbsp; &nbsp; int mrno=obj_1.giveaccountno();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.close();<br>
+&nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"ADD MENU <br>
+<br>
+";<br>
+&nbsp; &nbsp; &nbsp;obj_2.getdata(mrno);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.open("banking.txt",ios::app|ios::binary);<br>
+&nbsp; &nbsp; &nbsp;if(!fout)<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"FILE OPEN ERROR &nbsp;";getch();return;}<br>
+&nbsp; &nbsp; &nbsp; fout.write((char*)&amp;obj_2,recsize);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+RECORD ADDED TO DATABASE"&lt;&lt;"<br>
+&nbsp;Press any key to<br>
+continue... ";<br>
+&nbsp; &nbsp; &nbsp; getch();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.close();<br>
+&nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void dispall()<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; account obj_3;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fstream fout;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int recsize=sizeof(account);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int countrec=0;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+DISPLAY ALL MENU<br>
+&nbsp;";<br>
+&nbsp; &nbsp; fout.open("banking.txt",ios::in);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!fout)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"FILE OPEN ERROR &nbsp;";getch();return;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(fout.read((char*)&amp;obj_3,recsize))<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;obj_3.dispdata();<br>
+&nbsp; &nbsp; &nbsp;countrec++;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+&nbsp;PRESS ANY KEY FOR NEXT....";<br>
+&nbsp; &nbsp; &nbsp;getch();<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+END OF FILE.TOTALNUMBER OF RECORDS..."&lt;&lt;countrec;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+Press any key......";<br>
+&nbsp; &nbsp; getch();<br>
+&nbsp; &nbsp; &nbsp; fout.close();}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void disprecord()<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;account obj_4;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fstream fout;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int mrno,flag=0;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int recsize=sizeof(account);<br>
+&nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+&nbsp;DISPLAY A RECORD MENU <br>
+";<br>
+&nbsp; &nbsp; fout.open("banking.txt",ios::in);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!fout)<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"FILE OPEN ERROR &nbsp;";getch();return;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+&nbsp;ENTER &nbsp;THE ACCOUNT NUMBER &nbsp;";cin&gt;&gt;mrno;<br>
+&nbsp; &nbsp; &nbsp;while(fout.read((char*)&amp;obj_4,recsize))<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp;if (obj_4.giveaccountno()==mrno)<br>
+{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;obj_4.dispdata();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+Press any key.....";<br>
+&nbsp; &nbsp; &nbsp;flag=1;break;<br>
+&nbsp; }<br>
+&nbsp;}<br>
+&nbsp; &nbsp; &nbsp;if(flag==0)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+NO SUCH ACCOUNT EXIST &nbsp;";<br>
+&nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+Press any key......";<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; getch();<br>
+&nbsp; &nbsp; fout.close();<br>
+&nbsp;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void delrecord()<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; account obj_5;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fstream fout,temp;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int mrno,flag;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int recsize=sizeof(account);<br>
+&nbsp; &nbsp; &nbsp;clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CLOSE ACCOUNT MENU <br>
+&nbsp;";<br>
+&nbsp; &nbsp; &nbsp;fout.open("banking.txt",ios::in);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(!fout)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"FILE OPEN ERROR &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; getch();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return;<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; temp.open("temp.txt",ios::app|ios::binary);<br>
+&nbsp; &nbsp; if(!temp)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"FILE OPEN ERROR &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; getch();<br>
+&nbsp; &nbsp; &nbsp;return;<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+&nbsp;ENTER THE ACCOUNT NUMBER ";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;mrno;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(fout.read((char*)&amp;obj_5,recsize))<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(obj_5.giveaccountno()==mrno)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;obj_5.dispdata();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; char confirm;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+ARE YOU SURE TO DELETE IT(Y/N)..";cin&gt;&gt;confirm;<br>
+&nbsp; &nbsp; &nbsp; if(confirm=='Y'||confirm=='y')<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.read((char*)&amp;obj_5,recsize);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+RECORD DELETED FORM DATABASE<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"press any key....";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flag=1;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(!fout)<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break;<br>
+&nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flag=1;<br>
+&nbsp; &nbsp; &nbsp;}<br>
+&nbsp; &nbsp;temp.write((char*)&amp;obj_5,recsize);}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.close();<br>
+&nbsp; &nbsp; temp.close();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; remove("banking.txt");<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rename("temp.txt","banking.txt");<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(flag==0)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+NO SUCH ACCOUNT EXIST";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"Press any key.....";<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp;getch();<br>
+&nbsp;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;void modrecord()<br>
+&nbsp; {<br>
+&nbsp; &nbsp; account obj_6;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fstream fout;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int mrno,flag=0;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; int recsize=sizeof(account);<br>
+&nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+MODIFY RECORD MENU<br>
+&nbsp;";<br>
+&nbsp; &nbsp; fout.open("banking.txt",ios::in|ios::out|ios::binary);<br>
+&nbsp; &nbsp; &nbsp;if(!fout)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"FILE OPEN ERROR &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;getch();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp;fout.seekg(ios::beg);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+ENTER RECORD NUMBER &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;mrno;<br>
+&nbsp; &nbsp; &nbsp; while(fout.read((char*)&amp;obj_6,recsize))<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(obj_6.giveaccountno()==mrno)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+MODIFY MENU<br>
+<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj_6.dispdata();<br>
+&nbsp; &nbsp; &nbsp; int tmprno=obj_6.giveaccountno()-1;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; account obj_7;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+&nbsp;ENTER NEW DATA<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;obj_7.getdata(tmprno);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; char confirm;<br>
+&nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+&nbsp;ARE YOU SURE(Y/N) <br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;confirm;<br>
+&nbsp; &nbsp; &nbsp;if(confirm=='Y'||confirm=='y')<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.seekg(-1*recsize,ios::cur);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.write((char*)&amp;obj_7,recsize);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+&nbsp;RECORD MODIFIED<br>
+&nbsp; ";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"Press any key.....";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; flag=1;<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(flag==0)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"NO SUCH RECORD EXIST<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"Press any key.....";<br>
+&nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.close();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; getch();<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;void withdraw()<br>
+&nbsp; &nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;account obj_9;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fstream fout;<br>
+&nbsp; &nbsp; int mrno=0;<br>
+&nbsp; int recsize=sizeof(account);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+WITHDRAWAL MENU<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.open("banking.txt",ios::in|ios::out|ios::binary);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(!fout)<br>
+&nbsp; &nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"FILE OPEN ERROR &nbsp;";getch();return;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.seekg(ios::beg);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+ENTER ACCOUNT NUMBER &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; cin&gt;&gt;mrno;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(fout.read((char*)&amp;obj_9,recsize))<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(obj_9.giveaccountno()==mrno)<br>
+&nbsp; &nbsp; &nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+ENTER THE AMOUNT TO BE WITHDRAWED::Rs ";<br>
+&nbsp; &nbsp; cin&gt;&gt;w;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; obj_9.withdrawal(w);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.seekg(-1*recsize,ios::cur);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fout.write((char*)&amp;obj_9,recsize);<br>
+&nbsp; }<br>
+&nbsp; &nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.close();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; getch();<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void punit(void)<br>
+&nbsp; {<br>
+<br>
+&nbsp; &nbsp; int gd=5, gm, errorcode;<br>
+&nbsp; &nbsp; int col,i=0,j;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; initgraph(&amp;gd, &amp;gm, "c:\tc\bgi");<br>
+&nbsp; &nbsp; &nbsp; while(5*i&lt;=700)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;setbkcolor(1);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;setcolor(3);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;rectangle(0+5*i,0+5*i,getmaxx()-5*i,getmaxy()-5*i);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i++;<br>
+&nbsp; }<br>
+&nbsp; &nbsp; i=0;<br>
+&nbsp; &nbsp; &nbsp;setcolor(4);<br>
+&nbsp; &nbsp;settextstyle(1,0,6);<br>
+<br>
+&nbsp; &nbsp; &nbsp;sleep(5);<br>
+&nbsp; &nbsp; &nbsp; cleardevice();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(5*i&lt;=700)<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;setbkcolor(1);<br>
+&nbsp; &nbsp; &nbsp;setcolor(3);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;circle(getmaxx()/2,getmaxy()/2,i*5);<br>
+&nbsp; &nbsp;i++;<br>
+&nbsp; &nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;setcolor(4);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;settextstyle(0,0,6);<br>
+&nbsp; &nbsp; &nbsp;outtextxy(190 ,getmaxy()/2-85,"PROJECT");<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; outtextxy(300,getmaxy()/2-25,"ON");<br>
+<br>
+&nbsp; &nbsp; &nbsp;outtextxy(190,getmaxy()/2+25,"BANKING");<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sleep(3);<br>
+&nbsp; &nbsp; &nbsp;i=0;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(i&lt;=130)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;setbkcolor(1);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setcolor(3);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;line(i*3,0,i*3,getmaxy());<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;line(getmaxx()-i*3,0,getmaxx()-i*3,getmaxy());<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; i++;<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sleep(1);<br>
+&nbsp; &nbsp; &nbsp; i=getmaxy();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(i&gt;0)<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; line(getmaxx()/2,getmaxy(),getmaxx(),i-=10);<br>
+&nbsp; &nbsp; &nbsp;delay(10);<br>
+&nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp; i=getmaxx();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(i&gt;0)<br>
+&nbsp; &nbsp;{<br>
+&nbsp; &nbsp; &nbsp;line(getmaxx()/2,getmaxy(),i-=10,0);<br>
+&nbsp; &nbsp; &nbsp; delay(10);<br>
+&nbsp; }<br>
+&nbsp; &nbsp; &nbsp; i=0;<br>
+&nbsp; &nbsp; &nbsp;while(i&lt;getmaxy())<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp;line(getmaxx()/2,getmaxy(),0,i+=10);<br>
+&nbsp; &nbsp; delay(10);<br>
+&nbsp; &nbsp; &nbsp;}<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;closegraph();<br>
+&nbsp; &nbsp; &nbsp;flushall();<br>
+&nbsp;}<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; void deposit(void)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; account obj_10;<br>
+&nbsp; &nbsp; &nbsp; fstream fout;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int mrno=0;<br>
+&nbsp; &nbsp; &nbsp; int recsize=sizeof(account);<br>
+&nbsp; &nbsp; &nbsp;clrscr();<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+<br>
+DEPOSITAL MENU<br>
+";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fout.open("banking.txt",ios::in|ios::out|ios::binary);<br>
+&nbsp; &nbsp;if(!fout)<br>
+&nbsp;{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"FILE OPEN ERROR &nbsp;";getch();return;}<br>
+&nbsp; &nbsp; &nbsp;fout.seekg(ios::beg);<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cout&lt;&lt;"<br>
+ENTER ACCOUNT NUMBER &nbsp;";<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cin&gt;&gt;mrno;<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while(fout.read((char*)&amp;obj_10,recsize))<br>
+&nbsp; {<br>
+&nbsp; &nbsp; &nbsp; if(obj_10.giveaccountno()==mrno)<br>
+&nbsp; {<br>
+&nbsp; &nbsp; clrscr();<br>
+&nbsp; &nbsp; &nbsp;cout&lt;&lt;"<br>
+<br>
+ENTER THE AMOUNT TO BE DEPOSITED ::Rs ";<br>
+&nbsp; &nbsp;cin&gt;&gt;w;<br>
+&nbsp; &nbsp; &nbsp; obj_10.deposital(w);<br>
+&nbsp; fout.seekg(-1*recsize,ios::cur);<br>
+&nbsp; &nbsp; &nbsp; fout.write((char*)&amp;obj_10,recsize);<br>
+&nbsp; &nbsp;}<br>
+&nbsp; &nbsp; &nbsp;}<br>
+&nbsp; fout.close();<br>
+&nbsp; &nbsp; &nbsp;getch();<br>
+&nbsp; &nbsp;}</code>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7549065889146532";
+/* ad */
+google_ad_slot = "2511581003";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1"><span class="post-author vcard">
+Posted by
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<meta content="https://plus.google.com/108645300328099782768" itemprop="url">
+<a class="g-profile" href="https://plus.google.com/108645300328099782768" rel="author" title="author profile" data-gapiscan="true" data-onload="true" data-gapiattached="true">
+<span itemprop="name">Junaid Hassan</span>
+</a>
+</span>
+</span>
+<span class="post-timestamp">
+at
+<meta content="http://cplus14.blogspot.com/2013/04/atm-machine-project.html" itemprop="url">
+<a class="timestamp-link" href="./C++ Codes  ATM MACHINE PROJECT_files/C++ Codes  ATM MACHINE PROJECT.htm" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2013-04-23T09:58:00-07:00">09:58</abbr></a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-1893200991">
+<a href="http://www.blogger.com/post-edit.g?blogID=5142944227078923209&postID=3517516107146231294&from=pencil" title="Edit Post">
+<img alt="" class="icon-action" height="18" src="./C++ Codes  ATM MACHINE PROJECT_files/icon18_edit_allbkg.gif" width="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+<a class="goog-inline-block share-button sb-email" href="http://www.blogger.com/share-post.g?blogID=5142944227078923209&postID=3517516107146231294&target=email" target="_blank" title="Email This"><span class="share-button-link-text">Email This</span></a><a class="goog-inline-block share-button sb-blog" href="http://www.blogger.com/share-post.g?blogID=5142944227078923209&postID=3517516107146231294&target=blog" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=270,width=475&quot;); return false;" target="_blank" title="BlogThis!"><span class="share-button-link-text">BlogThis!</span></a><a class="goog-inline-block share-button sb-twitter" href="http://www.blogger.com/share-post.g?blogID=5142944227078923209&postID=3517516107146231294&target=twitter" target="_blank" title="Share to Twitter"><span class="share-button-link-text">Share to Twitter</span></a><a class="goog-inline-block share-button sb-facebook" href="http://www.blogger.com/share-post.g?blogID=5142944227078923209&postID=3517516107146231294&target=facebook" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" target="_blank" title="Share to Facebook"><span class="share-button-link-text">Share to Facebook</span></a><a class="goog-inline-block share-button sb-pinterest" href="http://www.blogger.com/share-post.g?blogID=5142944227078923209&postID=3517516107146231294&target=pinterest" target="_blank" title="Share to Pinterest"><span class="share-button-link-text">Share to Pinterest</span></a><div class="goog-inline-block dummy-container"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 300px; height: 20px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 300px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1406004322789" name="I0_1406004322789" src="./C++ Codes  ATM MACHINE PROJECT_files/fastbutton(2).htm" data-gapiattached="true" title="+1"></iframe></div></div>
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2"><span class="post-labels">
+Labels:
+<a href="http://cplus14.blogspot.in/search/label/ATM" rel="tag">ATM</a>,
+<a href="http://cplus14.blogspot.in/search/label/bank" rel="tag">bank</a>,
+<a href="http://cplus14.blogspot.in/search/label/MACHINE" rel="tag">MACHINE</a>,
+<a href="http://cplus14.blogspot.in/search/label/projects" rel="tag">projects</a>,
+<a href="http://cplus14.blogspot.in/search/label/system" rel="tag">system</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3"><span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>1 comment:</h4>
+<div class="comments-content">
+<script async="async" src="./C++ Codes  ATM MACHINE PROJECT_files/comments.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function() {
+      var items = [{'id': '7141187480001539885', 'body': 'plz i want to understand this code will u help me plzz...', 'timestamp': '1402408807246', 'permalink': 'http://cplus14.blogspot.com/2013/04/atm-machine-project.html?showComment\0751402408807246#c7141187480001539885', 'author': {'name': 'Yasir Naseer', 'avatarUrl': 'http://img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'http://www.blogger.com/profile/11391738257878041761'}, 'displayTime': '10 June 2014 07:00', 'deleteclass': 'item-control blog-admin pid-843913281'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more.', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '5142944227078923209', 'postId': '3517516107146231294', 'feed': 'http://cplus14.blogspot.com/feeds/3517516107146231294/comments/default', 'authorName': 'Junaid Hassan', 'authorUrl': 'http://www.blogger.com/profile/12526085109765628194', 'baseUri': 'http://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+</script>
+<div id="comment-holder">
+
+<div id="bc_0_2C" kind="c"><div id="bc_0_2CT"><div id="bc_0_1T" class="comment-thread" kind="r" t="0" u="0"><ol id="bc_0_1TB"><li id="bc_0_0B" class="comment" kind="b"><div class="avatar-image-container"><img src="./C++ Codes  ATM MACHINE PROJECT_files/b36-rounded.png"></div><div id="c7141187480001539885" class="comment-block"><div id="bc_0_0M" class="comment-header" kind="m"><cite class="user"><a rel="nofollow" href="http://www.blogger.com/profile/11391738257878041761">Yasir Naseer</a></cite><span class="icon user"></span><span class="datetime secondary-text"><a rel="nofollow" href="http://cplus14.blogspot.com/2013/04/atm-machine-project.html?showComment=1402408807246#c7141187480001539885">10 June 2014 07:00</a></span></div><p id="bc_0_0MC" class="comment-content">plz i want to understand this code will u help me plzz...</p><span id="bc_0_0MN" class="comment-actions secondary-text" kind="m"><a kind="i" href="javascript:;" target="_self" o="r">Reply</a><span class="item-control blog-admin pid-843913281"><a o="d" target="_self" href="http://www.blogger.com/delete-comment.g?blogID=5142944227078923209&postID=7141187480001539885">Delete</a></span></span></div><div id="bc_0_0BR" class="comment-replies"></div><div id="bc_0_0B_box" class="comment-replybox-single"></div></li></ol><div id="bc_0_1I" class="continue" kind="ci" style="display: none;"><a href="javascript:;" target="_self">Add comment</a></div><div id="bc_0_1T_box" class="comment-replybox-thread"><iframe allowtransparency="true" class="blogger-iframe-colorize blogger-comment-from-post" frameborder="0" height="260px" id="comment-editor" name="comment-editor" src="./C++ Codes  ATM MACHINE PROJECT_files/comment-iframe.htm" width="100%" style="display: block;"></iframe></div><div id="bc_0_1L" class="loadmore loaded" kind="rb"><a href="javascript:;" target="_self">Load more...</a></div></div></div></div></div>
+</div>
+<p class="comment-footer">
+</p><div class="comment-form">
+<a name="comment-form"></a>
+<p>
+</p>
+<a href="https://www.blogger.com/comment-iframe.g?blogID=5142944227078923209&postID=3517516107146231294&blogspotRpcToken=1294381" id="comment-editor-src"></a>
+
+<script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/1327485354-comment_from_post_iframe.js"></script>
+<script type="text/javascript">
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html', '04064410953849523200');
+    </script>
+</div>
+<p></p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+</div>
+<!-- google_ad_section_end(name=default) -->
+<div class="inline-ad">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7549065889146532";
+google_ad_host = "ca-host-pub-1556223355139109";
+google_ad_host_channel = "L0007";
+/* cplus14_main_Blog1_336x280_as */
+google_ad_slot = "8787575004";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+</div>
+<!-- google_ad_section_start -->
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://cplus14.blogspot.in/2013/04/airways-reservation-system-project.html" id="Blog1_blog-pager-older-link" title="Older Post">Older Post</a>
+</span>
+<a class="home-link" href="http://cplus14.blogspot.in/">Home</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+Subscribe to:
+<a class="feed-link" href="http://cplus14.blogspot.com/feeds/3517516107146231294/comments/default" target="_blank" type="application/atom+xml">Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en_GB'};</script>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+<div class="sidebar section" id="sidebar-right-1"><div class="widget AdSense" id="AdSense1">
+<div class="widget-content">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7549065889146532";
+google_ad_host = "ca-host-pub-1556223355139109";
+google_ad_host_channel = "L0001";
+/* cplus14_sidebar-right-1_AdSense1_300x250_as */
+google_ad_slot = "1824099809";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_2_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=5142944227078923209&widgetType=AdSense&widgetId=AdSense1&action=editWidget&sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;AdSense1&quot;));" target="configAdSense1" title="Edit">
+<img alt="" height="18" src="./C++ Codes  ATM MACHINE PROJECT_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget PlusFollowers" id="PlusFollowers1">
+<h2 class="title">Google+ Followers</h2>
+<div class="widget-content">
+<div id="___plus_0" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 290px; height: 284px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 290px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 284px;" tabindex="0" vspace="0" width="100%" id="I2_1406004322803" name="I2_1406004322803" src="./C++ Codes  ATM MACHINE PROJECT_files/followers.htm" data-gapiattached="true" title="+1"></iframe></div>
+<script type="text/javascript">
+        window.___gcfg = {'lang': 'en_GB'};
+      </script>
+</div>
+</div><div class="widget LinkList" id="LinkList1">
+<h2>CATEGORIES</h2>
+<div class="widget-content">
+<ul>
+<li><a href="http://cplus14.blogspot.com/search/label/beginner">C++ For Beginners</a></li>
+<li><a href="http://cplus14.blogspot.com/search/label/advance">C++ Advance Level</a></li>
+<li><a href="http://cplus14.blogspot.com/search/label/projects">C++ Projects</a></li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=5142944227078923209&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;LinkList1&quot;));" target="configLinkList1" title="Edit">
+<img alt="" height="18" src="./C++ Codes  ATM MACHINE PROJECT_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget BlogArchive" id="BlogArchive1">
+<h2>Blog Archive</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">▼&nbsp;</span>
+</a>
+<a class="post-count-link" href="http://cplus14.blogspot.in/search?updated-min=2013-01-01T00:00:00-08:00&updated-max=2014-01-01T00:00:00-08:00&max-results=27">2013</a>
+<span class="post-count" dir="ltr">(27)</span>
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">▼&nbsp;</span>
+</a>
+<a class="post-count-link" href="http://cplus14.blogspot.in/2013_04_01_archive.html">April</a>
+<span class="post-count" dir="ltr">(27)</span>
+<ul class="posts">
+<li><a href="./C++ Codes  ATM MACHINE PROJECT_files/C++ Codes  ATM MACHINE PROJECT.htm">ATM MACHINE PROJECT</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/airways-reservation-system-project.html">AIRWAYS RESERVATION SYSTEM PROJECT</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/report-of-project-mcqs-exam.html">REPORT OF PROJECT MCQ'S EXAM</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/mcqs-exam-project.html">MCQ'S EXAM PROJECT</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/code-to-produce-increasing-and.html">Code to produce increasing and decreasing stars</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/code-to-display-february-month-as-in.html">CODE TO DISPLAY FEBRUARY MONTH AS IN CALENDER</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/game-of-chance-using-random-function.html">GAME OF CHANCE USING RANDOM FUNCTION</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/file-handling-programs.html">FILE HANDLING PROGRAMS</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/file-handling-codes.html">FILE HANDLING CODES</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/polymorphism-example1.html">POLYMORPHISM EXAMPLE1</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/inheritance-example2.html">INHERITANCE EXAMPLE2</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/inheritance-example1.html">INHERITANCE EXAMPLE1</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/code-to-produce-decreasing-stars.html">Code to produce decreasing stars</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/code-for-simple-calculator.html">Code for Simple Calculator</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/getting-maximum-value-from-array.html">Getting Maximum Value from Array Elements</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/manipulating-array-elements.html">Manipulating Array Elements</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/a-programe-to-calculate-factorial-of.html">A programe to calculate factorial of a number</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/programm-to-get-multiplication-table.html">Programm to get multiplication table</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/calculating-sum-of-first-ten-odd.html">Calculating sum of first ten odd numbers using loo...</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/a-programe-to-find-roots-of-quadratic.html">A programe to find the roots of quadratic equation...</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/a-programme-to-check-divisibility-of.html">A programme to check the divisibility of a number ...</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/conversion-of-fahrenheit-temperature-in.html">Conversion of Fahrenheit Temperature in Celcius</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/addition-and-multiplication-of-two.html">Addition and Multiplication of Two Numbers</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/taking-two-inputs-in-variables-and-then.html">Taking two inputs in variables and then interchang...</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/creating-columns-using-setw-operator.html">Creating Columns using "SETW" Operator</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/simple-code-to-show-your-name-or.html">Simple Code To Show Your Name or Sentence on Scree...</a></li>
+<li><a href="http://cplus14.blogspot.in/2013/04/c-programming-language-codes-and.html">C++ (Programming Language Codes and Projects)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=5142944227078923209&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;BlogArchive1&quot;));" target="configBlogArchive1" title="Edit">
+<img alt="" height="18" src="./C++ Codes  ATM MACHINE PROJECT_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget PlusOne" id="PlusOne1">
+<div class="widget-content">
+<div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 106px; height: 24px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 106px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I1_1406004322798" name="I1_1406004322798" src="./C++ Codes  ATM MACHINE PROJECT_files/fastbutton.htm" data-gapiattached="true" title="+1"></iframe></div>
+<script type="text/javascript">
+      window.___gcfg = {"lang": "en_GB"};
+    </script>
+</div>
+</div></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="sidebar section" id="sidebar-right-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="sidebar section" id="sidebar-right-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="sidebar section" id="sidebar-right-3"></div>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot section" id="footer-1"><div class="widget PlusBadge" id="PlusBadge1">
+<script type="text/javascript">
+  window.___gcfg = {
+    lang: 'en_GB'
+  };
+  </script>
+<h2 class="title">Google+ Badge</h2>
+<div id="___plus_1" style="text-indent: 0px; margin: 0px; padding: 0px; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 450px; height: 106px; background: transparent;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 450px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 106px;" tabindex="0" vspace="0" width="100%" id="I3_1406004322805" name="I3_1406004322805" src="./C++ Codes  ATM MACHINE PROJECT_files/badge.htm" data-gapiattached="true" title="+Badge"></iframe></div>
+</div></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="foot section" id="footer-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="foot section" id="footer-2-2"><div class="widget Stats" id="Stats1">
+<h2>Total Pageviews</h2>
+<div class="widget-content">
+<div id="Stats1_content">
+<span class="counter-wrapper text-counter-wrapper" id="Stats1_totalCount">14,782</span>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=5142944227078923209&widgetType=Stats&widgetId=Stats1&action=editWidget&sectionId=footer-2-2" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Stats1&quot;));" target="configStats1" title="Edit">
+<img alt="" height="18" src="./C++ Codes  ATM MACHINE PROJECT_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class="foot section" id="footer-3"><div class="widget Attribution" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+Simple template. Powered by <a href="http://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=5142944227078923209&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Attribution1&quot;));" target="configAttribution1" title="Edit">
+<img alt="" height="18" src="./C++ Codes  ATM MACHINE PROJECT_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div><iframe frameborder="0" id="google_top_static_frame" name="google_top_static_frame" src="./C++ Codes  ATM MACHINE PROJECT_files/blank.htm" style="height: 0px; width: 0px; position: absolute;"></iframe>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/2423294629-widgets.js"></script>
+<script type="text/javascript" src="./C++ Codes  ATM MACHINE PROJECT_files/plusone.js" gapi_processed="true"></script>
+<script type="text/javascript">
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '5142944227078923209';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d5142944227078923209','//cplus14.blogspot.in/2013/04/atm-machine-project.html','5142944227078923209');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '5142944227078923209', 'bloggerUrl': 'http://www.blogger.com', 'title': 'C++ Codes', 'pageType': 'item', 'postId': '3517516107146231294', 'url': 'http://cplus14.blogspot.in/2013/04/atm-machine-project.html', 'canonicalUrl': 'http://cplus14.blogspot.com/2013/04/atm-machine-project.html', 'canonicalHomepageUrl': 'http://cplus14.blogspot.com/', 'homepageUrl': 'http://cplus14.blogspot.in/', 'blogspotFaviconUrl': 'http://cplus14.blogspot.in/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'ATM MACHINE PROJECT', 'pageTitle': 'C++ Codes: ATM MACHINE PROJECT', 'metaDescription': '#include\74fstream.h\76\n#include\74stdio.h\76\n#include\74conio.h\76\n#include\74string.h\76\n#include\74iostream.h\076', 'encoding': 'UTF-8', 'locale': 'en_GB', 'localeUnderscoreDelimited': 'en_gb', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42C++ Codes - Atom\42 href\75\42http://cplus14.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42C++ Codes - RSS\42 href\75\42http://cplus14.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42C++ Codes - Atom\42 href\75\42http://www.blogger.com/feeds/5142944227078923209/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42C++ Codes - Atom\42 href\75\42http://cplus14.blogspot.com/feeds/3517516107146231294/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,f\75\42chrome\42,g\75\42tick\42,k\75\42jstiming\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){var e\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[e,d];if(void 0\75\75c)try{b.console.timeStamp(\42CSI/\42+a)}catch(h){}};this[g](\42start\42,null,a)}var a;b.performance\46\46(a\75b.performance.timing);var n\75a?new d(a.responseStart):new d;b.jstiming\75{Timer:d,load:n};if(a){var c\75a.navigationStart,h\75a.responseStart;0\74c\46\46h\76\75c\46\46(b[k].srt\75h-c)}if(a){var e\75b[k].load;0\74c\46\46h\76\75c\46\46(e[g](\42_wtsrt\42,void 0,c),e[g](\42wtsrt_\42,\42_wtsrt\42,h),e[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,\nb[f]\46\46b[f].csi\46\46(a\75Math.floor(b[f].csi().pageT),e\46\0460\74c\46\46(e[g](\42_tbnd\42,void 0,b[f].csi().startE),e[g](\42tbnd_\42,\42_tbnd\42,c))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,e\46\0460\74c\46\46(e[g](\42_tbnd\42,void 0,b.external.startE),e[g](\42tbnd_\42,\42_tbnd\42,c))),a\46\46(b[k].pt\75a)}catch(p){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[k].load[g](\42aft\42)};var l\75!1;function m(){l||(l\75!0,b[k].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,m,!1):b.attachEvent(\42onscroll\42,m);\n })();\74/script\076', 'mobileHeadScript': '', 'adsenseClientId': 'ca-pub-7549065889146532', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42https://www.blogger.com/static/v1/jsbin/1735305980-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/76f25a6f2e06af76', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {'content_padding': '10px', 'paging_background': 'transparent none no-repeat scroll top center', 'image_border_small_size': '0', 'body_background_gradient_cap': 'none', 'tabs_selected_background_color': '#000000', 'body_rule_color': '#404040', 'header_shadow_spread': '1px', 'header_shadow_offset_left': '-1px', 'header_padding': '30px', 'link_visited_color': '#cc6600', 'mobile_background_size': 'auto', 'post_title_font': 'normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_text_color': '#999999', 'date_header_margin': 'inherit', 'header_background_gradient': 'none', 'header_bottom_border_size': '1px', 'content_shadow_spread_webkit': '5px', 'header_shadow_offset_top': '-1px', 'mobile_button_color': '#ffffff', 'widget_title_font': 'normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'main_section_margin': '15px', 'keycolor': '#dd7700', 'content_shadow_spread': '40px', 'image_background_color': '#111111', 'header_font': 'normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'header_background_color': 'transparent', 'main_border_width': '0', 'main_padding': '15px', 'tabs_border_color': '#404040', 'image_text_color': '#cccccc', 'description_text_size': '140%', 'post_footer_background_color': '#303030', 'body_background_gradient_tile': 'none', 'page_width': 'auto', 'tabs_background_gradient': 'none', 'mobile_background_overlay': 'transparent none repeat scroll top left', 'main_padding_bottom': '30px', 'tabs_background_color': '#222222', 'image_border_large_size': '1px', 'post_margin_bottom': '25px', 'body_background_override': '', 'tabs_margin_side': '30px', 'link_hover_color': '#cc6600', 'description_text_color': '#aaaaaa', 'body_text_color': '#cccccc', 'content_padding_horizontal': '10px', 'endSide': 'right', 'page_width_selector': '.region-inner', 'date_header_padding': 'inherit', 'post_footer_text_color': '#888888', 'startSide': 'left', 'date_header_color': '#cccccc', 'tabs_font': 'normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'post_footer_border_color': '#444444', 'body_font': 'normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'footer_bevel': '0', 'tabs_bevel_border_width': '0', 'date_header_background_color': 'transparent', 'content_shadow_spread_ie': '10px', 'widget_title_text_color': '#ffffff', 'header_border_horizontalsize': '0', 'image_border_color': '#111111', 'tabs_border_width': '1px', 'content_background_color': '#333333', 'link_color': '#dd7700', 'header_text_color': '#ffffff', 'date_header_letterspacing': 'inherit', 'tabs_margin_top': '0', 'main_padding_top': '30px', 'header_border_size': '1px', 'tabs_selected_text_color': '#ffffff', 'content_background_color_selector': '.content-inner', 'body_background_color': '#292929', 'widget_alternate_text_color': '#999999'}, 'override': '#navbar-iframe{\ndisplay: none;\n}'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'crosscol', null, document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'href': 'http://cplus14.blogspot.in/', 'title': 'Home', 'isCurrentPage': false}, {'href': 'http://cplus14.blogspot.in/p/beginners.html', 'title': 'Beginners Codes', 'isCurrentPage': false, 'id': '6607419227848696642'}, {'href': 'http://cplus14.blogspot.in/p/advance-level.html', 'title': 'Advance Level Codes', 'isCurrentPage': false, 'id': '5205326268351093744'}, {'href': 'http://cplus14.blogspot.in/p/projects_20.html', 'title': 'Professional Projects', 'isCurrentPage': false, 'id': '1542473643910361383'}, {'href': 'http://comm14.blogspot.com', 'title': 'General Writings', 'isCurrentPage': false}, {'href': 'http://matlabcode.weebly.com', 'title': 'Mtlab Codes', 'isCurrentPage': false}, {'href': 'http://webcods.blogspot.com', 'title': 'Web Development', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'footer-2-2', null, document.getElementById('Stats1'), {'title': 'Total Pageviews', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': false, 'statsUrl': '//cplus14.blogspot.in/b/stats?style\75BLACK_TRANSPARENT\46timeRange\75ALL_TIME\46token\75Mr4iXkcBAAA.yGq9tGhltOH1rxjLX2D1UPkd9RCGNB8oSpvEooeRZGc.XcPEhPQfnZVi72_tL2aaqQ'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Simple template. Powered by \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/3589638247-lbx__en_gb.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/2392111094-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense1', 'sidebar-right-1', null, document.getElementById('AdSense1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PlusFollowersView', new _WidgetInfo('PlusFollowers1', 'sidebar-right-1', null, document.getElementById('PlusFollowers1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar-right-1', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PlusOneView', new _WidgetInfo('PlusOne1', 'sidebar-right-1', null, document.getElementById('PlusOne1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PlusBadgeView', new _WidgetInfo('PlusBadge1', 'footer-1', null, document.getElementById('PlusBadge1'), {}, 'displayModeFull'));
+</script>
+
+<iframe name="oauth2relay801410177" id="oauth2relay801410177" src="./C++ Codes  ATM MACHINE PROJECT_files/postmessageRelay.htm" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>
